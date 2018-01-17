@@ -8,9 +8,10 @@ function init(e) {
       index++;
       if (index === code.length) {
         alert('Hurray!');
-        index = 0;
       }
-    } 
+    } else {
+      alert('That is not the correct code.');
+    }
   });
 }
 
