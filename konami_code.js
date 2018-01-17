@@ -6,9 +6,8 @@ function init(e) {
     const key = parseInt(event.detail || event.which);
     if (key === code[i]) {
         i++;
-        if (index === code.length) {
+        if (i === code.length) {
         alert('Hurray!');
-        i = 0;
       }
     } else {
       alert('That code is incorrect.');
