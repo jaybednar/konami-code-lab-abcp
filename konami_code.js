@@ -11,7 +11,7 @@ function init(e) {
         i = 0;
       }
     } else {
-      alert('That code is incorrect.');
+      i = 0;
     }
   });
 }
