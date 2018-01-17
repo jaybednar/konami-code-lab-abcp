@@ -11,7 +11,7 @@ function init(e) {
         i = 0;
       }
     } else {
-      i = 0;
+      console.log('That is not the correct code.')
     }
   });
 }
