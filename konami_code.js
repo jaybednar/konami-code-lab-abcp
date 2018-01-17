@@ -4,9 +4,8 @@ function init(e) {
   let index = 0;
   e.addEventHandler('keydown', function onKeyDownHandler(e){
     
-  })
-  function onKeyDownHandler(e) {
-    const key = parseInt(e.detail || e.which);
+  });
+  const key = parseInt(e.detail || e.which);
     if (key === code[index]) {
       
       if (index === code.length) {
@@ -16,7 +15,7 @@ function init(e) {
     } else {
       index = 0;
     }
-  }
+  
 }
 
 main.addEventListener('click', function(event) {
