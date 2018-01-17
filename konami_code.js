@@ -2,7 +2,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init(e) {
   let i = 0;
-  const keyDown = document.querySelector('keydown')
+  const keyDown = document.body.querySelector('keydown')
   keyDown.addEventListener('keydown', function(e) {
     const key = parseInt(e.detail || e.which);
     if (key === code[i]) {
