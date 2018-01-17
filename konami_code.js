@@ -1,9 +1,17 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init(e) {
-  let index = 0;
+  let i = 0;
   const keyDown = document.querySelector('keydown')
   keyDown.addEventListener('keydown', function(e) {
-    if ()
+    const key = parseInt(e.detail || e.which);
+    if (key === code[i]) {
+      i++;
+      if (index === code.length) {
+        alert('Hurray!');
+      }
+    } else {
+      alert('That code is incorrect.');
+    }
   });
 }
