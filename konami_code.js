@@ -8,6 +8,7 @@ function init(e) {
         i++;
         if (i === code.length) {
         alert('Hurray!');
+        i = 0;
       }
     } else {
       alert('That code is incorrect.');
