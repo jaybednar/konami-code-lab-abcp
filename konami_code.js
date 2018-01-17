@@ -6,6 +6,7 @@ function init() {
     const key = parseInt(e.detail || e.which);
     if (key === code[index]) {
       index++;
+      console.log (`${e.detail} ${e.which} ${e.location}`);
       if (index === code.length) {
         alert('Hurray!');
         index = 0;
